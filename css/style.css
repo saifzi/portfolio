@@ -41,10 +41,10 @@
     padding-right: 10px;
     border-radius: 3px;
     position: fixed;
-    right: 0;
+    left: 0;
     bottom: 0;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-left: 20px;
     transition: 0.3s;
 }
 
@@ -65,17 +65,14 @@
 }
 
 .header{
-    margin-left: 120px;
-    margin-right: 120px;
     /* padding: 10px;  */
     padding-top:4px ;
+    text-align: center;
 
 }
 
 .header button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border: none;
     background: none;
     width: 50%;
     font-size: 30px;
@@ -83,8 +80,6 @@
     cursor: pointer;
     color: rgb(0, 132, 165);
     transition: 0.3s;
-    border: 2px solid rgb(0 , 132, 165);
-    border-radius: 50px;
     animation: menu-btn 1s ease;
 }
 
@@ -100,9 +95,6 @@
 
 .header button:hover{
     transform: scale(1.05);
-    box-shadow: 2px 2px 8px rgb(0, 132, 165);
-    background-color: rgb(0 , 132, 165);
-    color: white;
 }
 
 
@@ -242,13 +234,13 @@
 
 .about-img img{
     width: 350px;
-    border: 10px transparent;
     padding: 10px;
     border-left: 3px solid rgb(0 , 132, 165);
     border-right: 3px solid rgb(0 , 132, 165);
     transition: 1s;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
 }
 
@@ -359,7 +351,7 @@
     padding: 10px;
     font-size: 15px;
     background-color: rgb(0 , 132, 165);
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 100px;
     color: white;
     transition: 0.5s;
@@ -594,16 +586,16 @@
 /* ====Hidden Social Media====== */
 .social-contect-hide{
     display: flex;
-    /* margin-left: 15px; */
+    margin-left: 15px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     visibility: hidden;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .indiv-social-hide{
-    margin: 7px;
+    margin: 4px;
 }
 
 .indiv-social-hide a img{
@@ -786,6 +778,10 @@
     }
 }
 @media screen and (max-width: 760px){
+    .scroll-text{
+        margin-top: 50px;
+        text-align: center;
+    }
     .about-img img{
         width: 350px;
         margin-bottom:40px ;
@@ -829,8 +825,7 @@
         justify-content:center;
     }
     .social-name{
-        display: none;
-        
+        display: none;  
     }
     .indiv-social a img{
         border: #0084a5 3px solid;
@@ -843,9 +838,6 @@
 
 
 @media screen and (max-width: 500px){
-    .project-card:hover .visit-project{
-        transform: translateY(-30%);  
-    }
 
     .visit-project h2{
         font-size: 18px;
@@ -857,6 +849,14 @@
 
     .contect-info p{
         font-size:15px;
+    }
+
+    .about-text button{
+        width: 40%;
+    }
+
+    .download-cv h2, .download-cv a{
+        font-size: medium;
     }
 }
 
@@ -876,4 +876,9 @@
     .menu-item a{
         font-size: 12px;
     }
+    .about-text button{
+        width: 60%;
+    }
+
+    
 }
